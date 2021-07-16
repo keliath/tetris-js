@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tetris Challenge</title>
+    <!--Import font -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<title id>Tetris Challenge</title>
+
+<body>
+    <h2>Tetris</h2>
+    <h4 id="status">El Juego</h2>
+        <button id="instructions">Instrucciones</button>
+        <!--Button for instructions -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Tecla ⬅️: mueve el bloque a la izquierda<br><br> Tecla ➡️: Mueve el bloque a la derecha<br><br> Tecla ⬇️: Acelera la caída del bloque<br><br> Teclas A & D: Rotar el bloque <br><br> Acumula tantos puntos como te sea posible llenando las
+                    filas de bloques. <br><br> Debes rotar, mover, y dejar caer los Tetriminos dentro del área de juego. <br><br> Las filas son despejadas cuando se las llena con los bloques sin dejar espacios en blanco.
+                </p>
+            </div>
+        </div>
+        <div id="button-container">
+            <button id="start">Empezar</button>
+            <h3>Puntaje:<span id="score">0</span></h3>
+            <button id="reset">Reiniciar</button>
+        </div>
+        <canvas id="tetris" width="240" height="400">
+            <script src="tetris.js"></script>
+</body>
+
+</html>
